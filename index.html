@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <title>Wunderlust Travel</title>
 </head>
-<header>
-    <div class="skip-link" >
-        Skip to <a href='#main'>Main Content</a>
-</header>
 <body>
+    <header>
+        <div class="skip-link" >
+            Skip to <a href='#main'>Main Content</a>
+        </div>
+    </header>
+
     <h1>Wunderlust Travel</h1>
     <picture>
         <source media="(max-width: 320px)" srcset="logo-S.png">
@@ -73,12 +75,11 @@
                             <circle cx="7" cy="10" r="1" />
                           </svg>     
                     </a>
-                    <a>
-                    <a href=”#” title=”Search for Hotels”>
+                    <a href="#" title="Search for Hotels">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="40" height="40" viewBox="0 0 24 24" stroke-width="3" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                          <polyline points="9 6 15 12 9 18" />
-                        </svg>     
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <polyline points="9 6 15 12 9 18" />
+                        </svg>
                     </a>
                     
                     <h5>Things to Do</h5>
@@ -91,7 +92,7 @@
                             <line x1="8" y1="7" x2="6" y2="12" />
                           </svg>
                     </a>
-                    <a href=”#” title=”Search for Activities”>
+                    <a href="#" title="Search for Activities">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="40" height="40" viewBox="0 0 24 24" stroke-width="3" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
                           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                           <polyline points="9 6 15 12 9 18" />
@@ -105,12 +106,12 @@
                             <path d="M19 3v12h-5c-.023 -3.681 .184 -7.406 5 -12zm0 12v6h-1v-3m-10 -14v17m-3 -17v3a3 3 0 1 0 6 0v-3" />
                           </svg>
                     </a>
-                    <a href=”#” title=”Search for Restaurants”></a> 
+                    <a href="#" title="Search for Restaurants"></a> 
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="40" height="40" viewBox="0 0 24 24" stroke-width="3" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
                           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                           <polyline points="9 6 15 12 9 18" />
                         </svg>   
-                    </a>
+
         </section>
         <section id="inspirations">
             <h2>Testinomials</h2>
@@ -211,7 +212,8 @@
                 type="text"
                 placeholder="Enter first name"
                 required
-            /><br>
+            >
+            <br>
 
             <label for="lastname">Last Name</label>
             <input 
@@ -220,7 +222,8 @@
                 type="text"
                 placeholder="Enter last name"
                 required
-            /><br>
+            >
+            <br>
 
             <fieldset>
                 <legend>Preferred Contact Method</legend>
@@ -230,28 +233,32 @@
                 <label for="text">Text</label><br>
                 <input id="phone" type="radio" name="contact-method" value="phone">
                 <label for="phone">Phone</label>
-            </fieldset><br>
+            </fieldset>
+            <br>
                 
-            <label for="email">Email Address</label>
+            <label for="email-address">Email Address</label>
             <input 
-                id="email" 
-                name="email"
+                id="email-address" 
+                name="email-address"
                 type="email"
                 placeholder="Enter email"
                 required
-            /><br>
+            >
+            <br>
 
-            <label for="phone">Phone Number</label>
+            <label for="phone-number">Phone Number</label>
             <input 
-                id="phone" 
-                name="phone"
+                id="phone-number" 
+                name="phone-number"
                 type="tel"
                 placeholder="Enter telephone number"
                 required
-            /><br>
+            >
+            <br>
 
             <label for="destination">Destination</label>
             <select id="destination" name="destination" required>
+                <option value="" disabled selected>Select a destination</option>
                 <option value="barcelona">Barcelona</option>
                 <option value="granada">Granada</option>
                 <option value="ibiza">Ibiza</option>
@@ -260,10 +267,12 @@
                 <option value="seville">Seville</option>
                 <option value="tenerife">Tenerife</option>
                 <option value="valencia">Valencia</option>
-            </select><br>
+            </select>
+            <br>
 
             <label for="time">Travel Time</label>
             <select id="time" name="time" required>
+                <option value="" disabled selected>Select travel time</option>
                 <option value="fall">Fall</option>
                 <option value="winter">Winter</option>
                 <option value="spring">Spring</option>
@@ -272,7 +281,7 @@
             </select>
         </section>
     </main>
-
+    <br>
     <p>
     Copyright 2021 Wunderlust<br>
     Privacy Statement<br>
